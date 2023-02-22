@@ -1,0 +1,52 @@
+
+body{
+    background: green;
+    box-sizing: border-box;
+}
+#card{
+    text-align: center;
+    background: white;
+    margin: auto;
+    height: 200px;
+    font-size: 100px;
+    width: 250px;
+    padding: 20px;
+    padding-top: 180px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+
+
+    
+}
+ ::before{
+    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+     
+}
+ ::after{
+    
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+     
+}
+.spade:before, .spade:after{content: '\2660';}
+.clud:before, .clud:after{content: '\2663';}
+.heart:before, .heart::after{content: '\2665'; color: red;}
+.diamond:before, .diamond::after{content: '\2666'; color: red;}
+
+button{
+    display: flex;
+    margin: 10px auto;
+    height: 40px;
+    padding: 12px;
+    cursor: pointer;
+    color: red;
+    background-color: black;
+    border-radius: 10px;
+}
